@@ -3,10 +3,29 @@ html{
     font-family: 'Lato', sans-serif;
 }
 
+h3 {
+    margin-right: 10px;
+}
+
 .small {
     font-size: 80% !important;
 }
 
+.meta-data-title {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.meta-data {
+    font-size: 24px;
+    text-align: left;
+}
+
+.meta-data-title span {
+    text-transform: lowercase;
+    font-weight: 300;
+    margin-left: 5px;
+}
 /*  Color scheme */
 .success {
 
@@ -32,11 +51,28 @@ header {
 
 }
 
+.meta div[class*='col-'] {
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #cccccc;
+}
+
+.meta div[class*='col-'].right-most {
+    border-right: none;
+}
+
+.collapse {
+    margin-bottom: 10px;
+}
+
+.collapse.details .card.card-body {
+    padding: .5rem;
+    font-size: 10pt;
+}
 .card-block {
     border-radius: .5em;
     background-color: #fff;
     border: 1px solid #CCCCCC;
-
     min-height: 300px;
 }
 
@@ -48,6 +84,7 @@ header {
 .btn.btn-outline-info {
     border-color: #26C1DD;
     color: #26C1DD;
+    margin-bottom: 10px;
 }
 
 .btn.btn-outline-info:hover {
