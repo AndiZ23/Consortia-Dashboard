@@ -33,7 +33,7 @@
             </div>
             <div class="row">
                 <div class="col-md-2 meta-data-title">
-                    Block period: <span id="block_period">5</span>
+                    Block period: <span id="block_period">5 sec</span>
                 </div>
                 <div class="col-md-2 meta-data-title">
                     tether: <span id="enable_tether">Disabled</span>
@@ -44,7 +44,7 @@
     <div class="row meta">
         <div class="col-md-2">
             <div class="meta-data-title">Members</div>
-            <div class="meta-data">2</div>
+            <div class="meta-data">3</div>
         </div>
         <div class="col-md-2">
             <div class="meta-data-title">Nodes</div>
@@ -61,21 +61,103 @@
     </div>
 
 
-    <div class="row section">
-        <div class="col-md-6 col-sm-12">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Membership: Org_name <span class="badge badge-pill badge-success">Active</span></h5>
+    <div id="Memberships" class="section">
+        <div class="row col-12 section-title">Memberships</div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title col-md-11">
+                                <h5>Default Organization <span class="badge badge-pill badge-success">Active</span></h5>
+                                <small>Created Time: <span data-key="created_at">mm/dd/yyyy, hh:mm</span></small>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="pull-right primary-color">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row meta">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="meta-data-title">Nodes</div>
+                                <div class="meta-data">0</div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 right-most">
+                                <div class="meta-data-title">App Credentials</div>
+                                <div class="meta-data">0</div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <button type="button" class="btn btn-primary">Check this member</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title col-md-11">
+                                <h5>Global Corporation of makin' stuff <span class="badge badge-pill badge-success">Active</span></h5>
+                                <small>Created Time: <span data-key="created_at">mm/dd/yyyy, hh:mm</span></small>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="pull-right primary-color">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row meta">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="meta-data-title">Nodes</div>
+                                <div class="meta-data">1</div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 right-most">
+                                <div class="meta-data-title">App Credentials</div>
+                                <div class="meta-data">1</div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <button type="button" class="btn btn-primary">Check this member</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-sm-12">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Membership: Org_name</h5>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title col-md-11">
+                                <h5>Worldwide Company for harvesting things <span class="badge badge-pill badge-success">Active</span></h5>
+                                <small>Created Time: <span id="created_at">mm/dd/yyyy, hh:mm</span></small>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="pull-right primary-color">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row meta">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="meta-data-title">Nodes</div>
+                                <div class="meta-data">1</div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 right-most">
+                                <div class="meta-data-title">App Credentials</div>
+                                <div class="meta-data">1</div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <button type="button" class="btn btn-primary">Check this member</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -84,5 +166,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Font Awesome free v5.3.1 -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
 </body>
 </html>
