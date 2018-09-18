@@ -27,11 +27,9 @@
                 <div class="col-md-2 meta-data-title">
                     Provider: <span id="provider">geth</span>
                 </div>
-                <div class="col-md-4 meta-data-title">
+                <div class="col-md-2 meta-data-title">
                     Consensus Type: <span id="consensus_type">poa</span>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-md-2 meta-data-title">
                     Block period: <span id="block_period">5 sec</span>
                 </div>
@@ -39,6 +37,7 @@
                     tether: <span id="enable_tether">Disabled</span>
                 </div>
             </div>
+
         </div>
     </div>
     <div class="row meta">
@@ -63,37 +62,7 @@
 
     <div id="Memberships" class="section">
         <div class="row col-12 section-title">Memberships</div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="card-title col-md-11">
-                                <h5>Default Organization <span class="badge badge-pill badge-success">Active</span></h5>
-                                <small>Created Time: <span data-key="created_at">mm/dd/yyyy, hh:mm</span></small>
-                            </div>
-                            <div class="col-md-1">
-                                <a href="#" class="pull-right primary-color">
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row meta">
-                            <div class="col-md-4 col-sm-12">
-                                <div class="meta-data-title">Nodes</div>
-                                <div class="meta-data">0</div>
-                            </div>
-                            <div class="col-md-4 col-sm-12 right-most">
-                                <div class="meta-data-title">App Credentials</div>
-                                <div class="meta-data">0</div>
-                            </div>
-                        </div>
-                        <div class="row col-md-12">
-                            <button type="button" class="btn btn-primary">Check this member</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div id="Memberships-content" class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-body">
@@ -124,15 +93,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
                             <div class="card-title col-md-11">
                                 <h5>Worldwide Company for harvesting things <span class="badge badge-pill badge-success">Active</span></h5>
-                                <small>Created Time: <span id="created_at">mm/dd/yyyy, hh:mm</span></small>
+                                <small>Created Time: <span data-key="created_at">mm/dd/yyyy, hh:mm</span></small>
                             </div>
                             <div class="col-md-1">
                                 <a href="#" class="pull-right primary-color">
@@ -156,8 +123,198 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card" data-membership-id="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title col-md-11">
+                                <h5>Default Organization <span class="badge badge-pill badge-success">Active</span></h5>
+                                <small>Created Time: <span data-key="created_at">mm/dd/yyyy, hh:mm</span></small>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="pull-right primary-color">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row meta">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="meta-data-title">Nodes</div>
+                                <div class="meta-data">0</div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 right-most">
+                                <div class="meta-data-title">App Credentials</div>
+                                <div class="meta-data">0</div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <button type="button" class="btn btn-primary">Check this member</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
+    <div id="Nodes" class="section">
+        <div class="row col-12 section-title">Nodes</div>
+        <div id="Nodes-Content" class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title col-md-11">
+                                <h5>Worldwide Co. Node <span class="badge badge-pill badge-success">Started</span></h5>
+                                <small>Owner: <span data-key="node-membership">Worldwide Company for harvesting things</span></small>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="pull-right primary-color">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="node-role inline"><small><i class="fas fa-user-circle"></i> Validator</small></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                rpc endpoint
+                            </div>
+                            <div class="col-md-12">
+                                https://u0mkft3lq5-u0yng1y414-rpc.us-east-2.kaleido.io
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                ws endpoint
+                            </div>
+                            <div class="col-md-12">
+                                wss://u0mkft3lq5-u0yng1y414-wss.us-east-2.kaleido.io
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                kaleido connect
+                            </div>
+                            <div class="col-md-12">
+                                https://u0mkft3lq5-u0yng1y414-connect.us-east-2.kaleido.io
+                            </div>
+                        </div>
+
+                        <div class="row col-md-12">
+                            <button type="button" class="btn btn-primary">Check this node</button>
+                            <button type="button" class="btn btn-connect">Kaleido Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title col-md-11">
+                                <h5>Global Corp. Node <span class="badge badge-pill badge-success">Started</span></h5>
+                                <small>Owner: <span data-key="node-membership">Global Corporation of makin' stuff</span></small>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="pull-right primary-color">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="node-role inline"><small><i class="fas fa-user-circle"></i> Validator</small></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                rpc endpoint
+                            </div>
+                            <div class="col-md-12">
+                                https://u0mkft3lq5-u0xq8pi7bu-rpc.us-east-2.kaleido.io
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                ws endpoint
+                            </div>
+                            <div class="col-md-12">
+                                wss://u0mkft3lq5-u0xq8pi7bu-wss.us-east-2.kaleido.io
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                kaleido connect
+                            </div>
+                            <div class="col-md-12">
+                                https://u0mkft3lq5-u0xq8pi7bu-connect.us-east-2.kaleido.io
+                            </div>
+                        </div>
+
+                        <div class="row col-md-12">
+                            <button type="button" class="btn btn-primary">Check this node</button>
+                            <button type="button" class="btn btn-connect">Kaleido Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title col-md-11">
+                                <h5>System Monitor <span class="badge badge-pill badge-success">Started</span></h5>
+                                <small>Owner: <span data-key="node-membership">System</span></small>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="pull-right primary-color">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="node-role inline"><small><i class="fas fa-user-circle"></i> Monitor</small></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                rpc endpoint
+                            </div>
+                            <div class="col-md-12">
+                                https://u0mkft3lq5-u0e3utw3ka-rpc.us-east-2.kaleido.io
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                ws endpoint
+                            </div>
+                            <div class="col-md-12">
+                                wss://u0mkft3lq5-u0e3utw3ka-wss.us-east-2.kaleido.io
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 meta-data-title">
+                                kaleido connect
+                            </div>
+                            <div class="col-md-12">
+                                https://u0mkft3lq5-u0e3utw3ka-connect.us-east-2.kaleido.io
+                            </div>
+                        </div>
+
+                        <div class="row col-md-12">
+                            <button type="button" class="btn btn-primary">Check this node</button>
+                            <button type="button" class="btn btn-connect">Kaleido Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
