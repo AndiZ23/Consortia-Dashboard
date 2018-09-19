@@ -9,12 +9,12 @@
 </head>
 <body>
 <header>
-    <h2>Consortium: <span id="consortium_name">Big Business Buddies</span></h2>
-    <small>A Consortium for doin' big business things.</small>
+    <h2>Consortium: <span id="consortium_name"></span></h2>
+    <small id="consortium_desc"></small>
 </header>
 
 <div class="container">
-    <h3 class="inline">Environment: Get Stuff Done <span class="badge badge-success">Live</span></h3>
+    <h3 class="inline">Environment: <span id="Env_name"></span> <span class="badge badge-success">Live</span></h3>
     <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#EnvironmentMore" aria-expanded="false" aria-controls="EnvironmentMore">
         Details
     </button>
@@ -22,19 +22,19 @@
         <div class="card card-body">
             <div class="row">
                 <div class="col-md-2 meta-data-title">
-                    Chain ID: <span id="chain_id">322259343</span>
+                    Chain ID: <span id="chain_id"></span>
                 </div>
                 <div class="col-md-2 meta-data-title">
-                    Provider: <span id="provider">geth</span>
+                    Provider: <span id="provider"></span>
                 </div>
                 <div class="col-md-2 meta-data-title">
-                    Consensus Type: <span id="consensus_type">poa</span>
+                    Consensus Type: <span id="consensus_type"></span>
                 </div>
                 <div class="col-md-2 meta-data-title">
-                    Block period: <span id="block_period">5 sec</span>
+                    Block period: <span id="block_period"></span>
                 </div>
                 <div class="col-md-2 meta-data-title">
-                    tether: <span id="enable_tether">Disabled</span>
+                    Tether: <span id="enable_tether"></span>
                 </div>
             </div>
 
@@ -47,15 +47,15 @@
         </div>
         <div class="col-md-2">
             <div class="meta-data-title">Nodes</div>
-            <div class="meta-data">3</div>
+            <div class="meta-data" id="num_nodes"></div>
         </div>
         <div class="col-md-2">
             <div class="meta-data-title">Region</div>
-            <div class="meta-data">US East</div>
+            <div class="meta-data" id="region"></div>
         </div>
         <div class="col-md-auto right-most">
             <div class="meta-data-title">Date Created</div>
-            <div class="meta-data">mm/dd/yyyy, hh:mm</div>
+            <div class="meta-data" id="env_created_at">mm/dd/yyyy, hh:mm</div>
         </div>
     </div>
 
@@ -63,6 +63,37 @@
     <div id="Memberships" class="section">
         <div class="row col-12 section-title">Memberships</div>
         <div id="Memberships-content" class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card" data-membership-id="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-title col-md-11">
+                                <h5>Default Organization <span class="badge badge-pill badge-success">Active</span></h5>
+                                <small>Created Time: <span data-key="created_at">mm/dd/yyyy, hh:mm</span></small>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="pull-right primary-color">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row meta">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="meta-data-title">Nodes</div>
+                                <div class="meta-data">0</div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 right-most">
+                                <div class="meta-data-title">App Credentials</div>
+                                <div class="meta-data">0</div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <button type="button" class="btn btn-primary">Check this member</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-body">
@@ -93,6 +124,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-body">
@@ -115,36 +147,6 @@
                             <div class="col-md-4 col-sm-12 right-most">
                                 <div class="meta-data-title">App Credentials</div>
                                 <div class="meta-data">1</div>
-                            </div>
-                        </div>
-                        <div class="row col-md-12">
-                            <button type="button" class="btn btn-primary">Check this member</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="card" data-membership-id="">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="card-title col-md-11">
-                                <h5>Default Organization <span class="badge badge-pill badge-success">Active</span></h5>
-                                <small>Created Time: <span data-key="created_at">mm/dd/yyyy, hh:mm</span></small>
-                            </div>
-                            <div class="col-md-1">
-                                <a href="#" class="pull-right primary-color">
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row meta">
-                            <div class="col-md-4 col-sm-12">
-                                <div class="meta-data-title">Nodes</div>
-                                <div class="meta-data">0</div>
-                            </div>
-                            <div class="col-md-4 col-sm-12 right-most">
-                                <div class="meta-data-title">App Credentials</div>
-                                <div class="meta-data">0</div>
                             </div>
                         </div>
                         <div class="row col-md-12">
@@ -326,6 +328,55 @@
 <!-- Font Awesome free v5.3.1 -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+<script type="text/javascript">
+    let consortium_id, env_id, num_nodes, node_list;
 
+    $(document).ready(function() {
+       fetch('/consortium')
+           .then(function(response){
+               return response.json();
+           })
+           .then(function(json){
+               if(json !== null && json.length > 0){
+                   consortium_id = json[0]._id;
+                   $("#consortium_name").text(json[0].name);
+                   $("#consortium_desc").text(json[0].description);
+               }
+           });
+
+       fetch({
+           method: 'GET',
+           uri: '/consortium_id',
+           body: {
+               consort_id : consortium_id
+           },
+           json: true
+       });
+
+       fetch('/environments')
+           .then(function(response){
+               return response.json();
+           })
+           .then(function(json){
+               if(json !== null && json.length > 0){
+                   env_id = json[0]._id;
+                   $("#Env_name").text(json[0].name);
+                   $("#chain_id").text(json[0].chain_id);
+                   $("#provider").text(json[0].provider);
+                   $("#consensus_type").text(json[0].consensus_type);
+                   $("#block_period").text(json[0].block_period);
+                   let tetherEnabled = json[0].enable_tether ? "Enabled" : "Disabled";
+                   $("#enable_tether").text(tetherEnabled);
+                   num_nodes = json[0].node_list.length;
+                   node_list = json[0].node_list;
+                   $("#num_nodes").text(num_nodes);
+                   $("#region").text(json[0].region);
+                   $("#env_created_at").text(new Date(json[0].created_at).toLocaleString('en-US'));
+               }
+           });
+
+
+    });
+</script>
 </body>
 </html>

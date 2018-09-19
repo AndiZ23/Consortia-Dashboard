@@ -1,0 +1,29 @@
+{
+  "name": "consortia-dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard displaying consortium structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndiZ23/Consortia-Dashboard.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Andi Zhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndiZ23/Consortia-Dashboard/issues"
+  },
+  "homepage": "https://github.com/AndiZ23/Consortia-Dashboard#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
